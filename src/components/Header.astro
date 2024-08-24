@@ -1,0 +1,33 @@
+---
+import userIcon from '../assets/usericon.svg';
+import shopIcon from '../assets/shopicon.svg';
+import barIcon from '../assets/baricon.svg';
+import siteLogo from '../../public/SiteLogo.svg';
+---
+
+<header class="py-5 px-10 bg-slate-50">
+  <div class="w-full flex justify-between">
+    <nav class="flex gap-20 items-center">
+      <img src={siteLogo.src} alt="logo-principal">
+      <nav class="hidden lg:flex gap-8">
+        <a href="" class="font-normal text-base hover:underline">About</a>
+        <a href="" class="font-normal text-base hover:underline">Features</a>
+        <a href="" class="font-normal text-base hover:underline">Pricing</a>
+        <a href="" class="font-normal text-base hover:underline">Galery</a>
+        <a href="" class="font-normal text-base hover:underline">Team</a>
+      </nav>
+    </nav>
+
+    <div class="flex gap-10">
+      <a href="" class="py-2 px-2 rounded-full bg-gray-200 transition-all duration-300 hover:outline hover:outline-gray-400 hover:outline-1">
+        <img src={userIcon.src} alt="icono">
+      </a>
+      <a href="" class="py-2 px-2 rounded-full bg-gray-200 transition-all duration-300 hover:outline hover:outline-gray-400 hover:outline-1">
+        <img src={shopIcon.src} alt="icono">
+      </a>
+      <a href="" class="py-2 px-2 rounded-full bg-gray-200 transition-all duration-300 hover:outline hover:outline-gray-400 hover:outline-1">
+        <img src={barIcon.src} alt="icono">
+      </a>
+    </div>
+  </div>
+</header>

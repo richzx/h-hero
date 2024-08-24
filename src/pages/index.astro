@@ -1,0 +1,47 @@
+---
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="SiteLogo.svg" type="image/x-icon">
+	<title>Header hero design - richarodz</title>
+</head>
+<body>
+	<!-- 
+	Ideas de diseño: 
+	https://www.figma.com/design/isoO2549rqrmk0oV1W5Xyx/101%2B-Free-Website-Headers-for-web-design-v1.2-(Community)?node-id=28-328&t=uzwTGPhQUUeIzYpK-0 -->
+
+	<Header/>
+	<Hero/>
+</body>
+</html>
+
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+	::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+		border-radius: 6px;
+		background-color: transparent;
+	}
+
+	::-webkit-scrollbar-thumb{
+		border-radius: 6px;
+		background-color: #F8FAFC;
+	}
+
+	body{
+		transition: all 0.3s;
+		font-family: "Moderustic", sans-serif;
+
+		scroll-snap-type: mandatory;
+		height: 100vh;
+		overflow-y: scroll;
+	}
+</style>
